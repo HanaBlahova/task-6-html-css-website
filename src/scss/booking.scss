@@ -1,0 +1,75 @@
+.booking {
+    color: $light-color;
+    font-size: 17px;
+
+    &__header {
+        font-family: $font-goodDog;
+        font-size: 77px;
+        text-align: center;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            font-size: 56px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    &__form-control {
+        padding: 40px 100px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            padding: 25px 100px;
+        }
+    }
+
+    h3 {
+        margin: 0px;
+        padding: 50px;
+    }
+    
+    label {
+        font-weight: bold;
+        display: block;
+        padding-bottom: 10px;
+    }
+    
+    input, select, button {
+        border-radius: 5px;
+        border: solid 1px $light-color;
+        background: $dark-color;
+        color: $light-color;
+        width: 235px;
+        height: 35px;
+        padding: 5px;
+    
+        &::placeholder {
+            color: $light-color;
+        }
+    }
+    
+    button {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    a {
+        color: $light-color;
+    
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    
+    img {
+        width: 100%;
+        max-height: 860px;
+    }
+}
+

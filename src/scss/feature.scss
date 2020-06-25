@@ -1,0 +1,39 @@
+.feature {
+    background-color: $bg-green;
+    display: flex;
+    color: $light-color;
+    font-size: 17px;
+    padding: 80px 130px 70px 160px;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+        padding: 40px 60px 45px 80px;
+        text-align: center;
+    }
+
+    &__box {
+        padding: 20px;
+    
+        span {
+            color: $green-color;
+            font-size: 80px;
+            font-family: $font-goodDog;
+            font-weight: bold;
+        }
+    }
+
+    p {
+        margin: 0px;
+        font-weight: 300;
+    }
+    
+    h4 {
+        font-size: 25px;
+        font-family: $font-goodDog;
+        margin: 0px;
+        padding-bottom: 40px;
+    }
+}
+
+
+

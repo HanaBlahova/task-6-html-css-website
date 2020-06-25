@@ -1,0 +1,69 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background: $bg-green-darker;
+    color: $light-color;
+    padding: 75px 5px;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__text {
+        max-width: 400px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            padding-left: 30px;
+        }
+    }
+
+    &__lists {
+        display: flex;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            display: flex;
+            padding-top: 50px;
+        }
+    }
+
+    &__list {
+        padding-left: 105px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            padding-left: 30px;
+        }
+    }
+
+    h4, h5 {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: 50px;
+        margin: 0px;
+    }
+    
+    h4 {
+        font-size: 25px;
+    }
+    
+    h5 {
+        font-size: 21px;
+    }
+    
+    p {
+        margin: 0px;
+    }
+    
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    
+    a {
+        color: $light-color;
+    }
+}
+
+

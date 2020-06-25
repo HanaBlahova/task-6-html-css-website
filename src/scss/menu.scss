@@ -1,0 +1,105 @@
+.menu {
+    margin: 85px auto;
+    background: $bg-green;
+    max-width: 1080px;
+
+    &__header {
+        text-align: center;
+        font-family: $font-goodDog;
+        font-size: 46px;
+        padding: 75px 0px;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+            font-size: 35px;
+            padding: 60px 0px 20px 0px;
+
+        }
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            color: $light-color;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 42px;
+
+            @media screen and (max-width: $mobile-breakpoint) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__boxes {
+        display: flex;
+        flex-wrap: wrap;
+        background: $bg-green;
+        text-align: center;
+
+        @media screen and (max-width: 1096px) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 30px;
+         }
+    }
+
+    &__box {
+        display: flex;
+        color: $light-color;
+        max-width: 540px;
+        max-height: 274px;
+        font-size: 17px;
+        font-family: $font-myriad;
+        font-weight: 400;
+        
+        @media screen and (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+         }
+
+        span {
+            font-family: $font-goodDog;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+
+    &__text {
+        padding: 25px;
+        min-width: 50%;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            padding: 20px;
+         }
+
+         @media screen and (max-width: $mobile-breakpoint) {
+            min-width: 50%;
+         }
+    }
+
+     &__img {
+         width: 50%;
+    }
+
+    h3 {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    h4 {
+        font-family: $font-goodDog;
+        color: $green-color;
+        font-size: 29px;
+    }
+    
+    img {
+        
+        @media screen and (max-width: $mobile-breakpoint) {
+            max-width: 100%;
+            padding-top: 50px;
+         }
+    }
+}
+

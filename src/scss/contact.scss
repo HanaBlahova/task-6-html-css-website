@@ -1,0 +1,29 @@
+.contact {
+    text-align: center;
+    padding: 45px 380px;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        padding: 60px 100px;
+    }
+
+    span {
+        font-size: 80px;
+        font-family: $font-goodDog;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-family: $font-goodDog;
+        font-size: 29px;
+    }
+    
+    p {
+        font-size: 19px;
+    }
+    
+    img {
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+}
+

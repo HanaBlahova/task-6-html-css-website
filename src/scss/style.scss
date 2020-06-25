@@ -1,0 +1,52 @@
+/* Variables */
+$dark-color: #212121;
+$green-color: #afc67b;
+$green-color-lighter: #afc57b;
+$grey-color: #555555;
+$bg-green: #44493b;
+$bg-green-darker: #3d4035;
+$btn-bg-green: #5d6941;
+$light-color: #eaeaea;
+$font-goodDog: 'GoodDog', arial;
+$font-myriad:'Myriad Pro';
+
+$mobile-breakpoint: 767px;
+$tablet-breakpoint: 1024px;
+$desktop-breakpoint: 1280px;
+
+
+
+/* Imports */
+@import './nav', './welcome', './introduction', './feature', 
+'./menu', './info', './new-menu', './booking', './articles', 
+'./contact', './footer';
+
+
+
+/* Basic style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $dark-color;
+    font-family: 'Montserrat', sans-serif;
+    color: $green-color;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-reverse {
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+     }
+}
+
+.bold {
+    font-weight: bold;
+}

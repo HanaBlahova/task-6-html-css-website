@@ -1,0 +1,38 @@
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: $light-color;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+    }
+
+    &__text {
+        padding: 0 50px 0 110px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+            padding: 40px 50px 40px 110px;
+            text-align: center;
+        }
+    }
+
+    h3 {
+        font-size: 29px;
+        font-family: $font-goodDog;
+        color: $green-color;
+    }
+    
+    p {
+        font-weight: 300;
+    }
+    
+    img {
+    
+        @media screen and (max-width: $tablet-breakpoint) {
+            max-width: 100%;
+         }
+    }
+}
+

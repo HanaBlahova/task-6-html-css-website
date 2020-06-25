@@ -1,0 +1,52 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 35px;
+    font-size: 35px;
+    z-index: 2;
+    background: $dark-color;
+    opacity: 0.5;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        align-items: flex-end;
+        flex-direction: column;
+        font-size: 27px;
+        padding: 0px 25px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 20px 0;
+    
+        @media screen and (max-width: $tablet-breakpoint) {
+            align-items: flex-end;
+            flex-direction: column;
+        }
+    
+        li {
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        
+        a {
+            color: $green-color;
+            text-decoration: none;
+        
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+
+
+
